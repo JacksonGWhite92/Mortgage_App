@@ -639,15 +639,21 @@
    </property>
    <widget class="QMenu" name="menu_File">
     <property name="title">
-     <string>&amp;File</string>
+     <string>&amp;Defaults</string>
     </property>
+    <addaction name="actionReload_Default_Values"/>
     <addaction name="actionSave_as_New_Defaults"/>
    </widget>
    <addaction name="menu_File"/>
   </widget>
   <action name="actionSave_as_New_Defaults">
    <property name="text">
-    <string>Save as New Defaults</string>
+    <string>Save New Default Values</string>
+   </property>
+  </action>
+  <action name="actionReload_Default_Values">
+   <property name="text">
+    <string>Reload Default Values</string>
    </property>
   </action>
  </widget>
@@ -681,7 +687,7 @@
    <sender>Home_Value_Field</sender>
    <signal>editingFinished()</signal>
    <receiver>MainWindowClass</receiver>
-   <slot>Home_Value_Field_Changes_Submitted()</slot>
+   <slot>Field_Changes_Submitted()</slot>
    <hints>
     <hint type="sourcelabel">
      <x>326</x>
@@ -697,7 +703,7 @@
    <sender>Down_Payment_Field</sender>
    <signal>editingFinished()</signal>
    <receiver>MainWindowClass</receiver>
-   <slot>Down_Payment_Field_Changes_Submitted()</slot>
+   <slot>Field_Changes_Submitted()</slot>
    <hints>
     <hint type="sourcelabel">
      <x>292</x>
@@ -713,7 +719,7 @@
    <sender>Loan_Term_Field</sender>
    <signal>editingFinished()</signal>
    <receiver>MainWindowClass</receiver>
-   <slot>Loan_Term_Field_Changes_Submitted()</slot>
+   <slot>Field_Changes_Submitted()</slot>
    <hints>
     <hint type="sourcelabel">
      <x>292</x>
@@ -729,7 +735,7 @@
    <sender>Payments_Per_Year_Field</sender>
    <signal>editingFinished()</signal>
    <receiver>MainWindowClass</receiver>
-   <slot>Payments_Per_Year_Field_Changes_Submitted()</slot>
+   <slot>Field_Changes_Submitted()</slot>
    <hints>
     <hint type="sourcelabel">
      <x>292</x>
@@ -745,7 +751,7 @@
    <sender>Interest_Rate_Field</sender>
    <signal>editingFinished()</signal>
    <receiver>MainWindowClass</receiver>
-   <slot>Interest_Rate_Field_Changes_Submitted()</slot>
+   <slot>Field_Changes_Submitted()</slot>
    <hints>
     <hint type="sourcelabel">
      <x>292</x>
@@ -761,7 +767,7 @@
    <sender>Extra_Mortgage_Field</sender>
    <signal>editingFinished()</signal>
    <receiver>MainWindowClass</receiver>
-   <slot>Extra_Mortgage_Field_Changes_Submitted()</slot>
+   <slot>Field_Changes_Submitted()</slot>
    <hints>
     <hint type="sourcelabel">
      <x>292</x>
@@ -777,7 +783,7 @@
    <sender>Stock_Contributions_Field</sender>
    <signal>editingFinished()</signal>
    <receiver>MainWindowClass</receiver>
-   <slot>Stock_Contributions_Field_Changes_Submitted()</slot>
+   <slot>Field_Changes_Submitted()</slot>
    <hints>
     <hint type="sourcelabel">
      <x>292</x>
@@ -793,7 +799,7 @@
    <sender>Stock_Growth_Rate_Field</sender>
    <signal>editingFinished()</signal>
    <receiver>MainWindowClass</receiver>
-   <slot>Stock_Growth_Rate_Field_Changes_Submitted()</slot>
+   <slot>Field_Changes_Submitted()</slot>
    <hints>
     <hint type="sourcelabel">
      <x>253</x>
@@ -821,17 +827,26 @@
     </hint>
    </hints>
   </connection>
+  <connection>
+   <sender>actionReload_Default_Values</sender>
+   <signal>triggered()</signal>
+   <receiver>MainWindowClass</receiver>
+   <slot>Reload_Default_Values()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>718</x>
+     <y>674</y>
+    </hint>
+   </hints>
+  </connection>
  </connections>
  <slots>
-  <slot>Home_Value_Field_Changes_Submitted()</slot>
-  <slot>Down_Payment_Field_Changes_Submitted()</slot>
-  <slot>Loan_Value_Field_Changes_Submitted()</slot>
-  <slot>Loan_Term_Field_Changes_Submitted()</slot>
-  <slot>Payments_Per_Year_Field_Changes_Submitted()</slot>
-  <slot>Interest_Rate_Field_Changes_Submitted()</slot>
-  <slot>Extra_Mortgage_Field_Changes_Submitted()</slot>
-  <slot>Stock_Contributions_Field_Changes_Submitted()</slot>
-  <slot>Stock_Growth_Rate_Field_Changes_Submitted()</slot>
+  <slot>Field_Changes_Submitted()</slot>
   <slot>Save_New_Default_Values()</slot>
+  <slot>Reload_Default_Values()</slot>
  </slots>
 </ui>

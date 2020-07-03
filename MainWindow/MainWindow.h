@@ -26,15 +26,9 @@ public:
 
 
 private slots:
-	void Home_Value_Field_Changes_Submitted();
-	void Down_Payment_Field_Changes_Submitted();
-	void Loan_Term_Field_Changes_Submitted();
-	void Payments_Per_Year_Field_Changes_Submitted();
-	void Interest_Rate_Field_Changes_Submitted();
-	void Extra_Mortgage_Field_Changes_Submitted();
-	void Stock_Growth_Rate_Field_Changes_Submitted();
-	void Stock_Contributions_Field_Changes_Submitted();
+	void Field_Changes_Submitted();
 	void Save_New_Default_Values();
+	void Reload_Default_Values();
 
 
 private:
@@ -42,13 +36,18 @@ private:
 
 	void Load_Default_Values();
 	void On_Startup();
-	void Generate_Tables();
+	void Do_The_Math();
+	void Fill_The_Table();
+	void Make_The_Chart();
 	void Calculate_Monthly_Payment();
 	void Clear_Vectors_and_Resize();
-	void Changes_Submitted();
+	void Update();
+
 	double Home_Value, Down_Payment, Loan_Value, Loan_Term, Payments_Per_Year, Interest_Rate, Adjusted_Stock_Contribution;
 	double Extra_Mortgage, Monthly_Payment, Monthly_Stock_Contribution, Monthly_Interest_Rate, Stock_Growth_Rate;
 	int Number_Of_Payments;
+	int House_Paid_Off;
+
 	std::vector<double> Starting_Balance;
 	std::vector<double> Remaining_Balance;
 	std::vector<double> Monthly_Interest;
@@ -59,12 +58,15 @@ private:
 	std::vector<double> Interest_Difference;
 	std::vector<double> Stock_Contributed;
 	std::vector<float>   Payment_Number;
+
 	QChart *chart = new QChart();
+
 	QSplineSeries *Starting_Balance_Series = new QSplineSeries;
 	QSplineSeries *Principal_Paid_Series = new QSplineSeries;
 	QSplineSeries *Interest_Paid_Series = new QSplineSeries;
 	QSplineSeries *Stock_Value_Series = new QSplineSeries;
 	QLineSeries *House_Paid_Off_Series = new QLineSeries;
+
 	QValueAxis *yAxis = new QValueAxis;
 	QValueAxis *xAxis = new QValueAxis;
 };
