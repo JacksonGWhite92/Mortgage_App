@@ -1,0 +1,8 @@
+House_Value=219000
+Down_Payment=44100
+Interest_Rate_Percent=2.875
+Loan_Term_Years=30
+Payments_Per_Year=12
+Extra_Mortgage=235
+Stock_Contributions=315.51
+Stock_Growth_Rate=7

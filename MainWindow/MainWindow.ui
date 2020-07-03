@@ -1,0 +1,837 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindowClass</class>
+ <widget class="QMainWindow" name="MainWindowClass">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1438</width>
+    <height>1349</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Jackson's Mortgage App</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(70, 70, 80)</string>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout">
+    <item>
+     <layout class="QVBoxLayout" name="verticalLayout">
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_2">
+        <item>
+         <layout class="QGridLayout" name="gridLayout">
+          <property name="horizontalSpacing">
+           <number>6</number>
+          </property>
+          <property name="verticalSpacing">
+           <number>8</number>
+          </property>
+          <item row="7" column="0">
+           <widget class="QLabel" name="Extra_Mortgage_Label">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>150</width>
+              <height>150</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">color: rgb(255,255,255)</string>
+            </property>
+            <property name="text">
+             <string>Extra Mortgage</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="2" rowspan="10">
+           <widget class="QChartView" name="Chart">
+            <property name="styleSheet">
+             <string notr="true">background-color: rgb(120, 120, 130); color:white</string>
+            </property>
+           </widget>
+          </item>
+          <item row="9" column="0">
+           <widget class="QLabel" name="Stock_Growth_Rate_Label">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>150</width>
+              <height>150</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">color: rgb(255,255,255)</string>
+            </property>
+            <property name="text">
+             <string>Stock Growth Rate</string>
+            </property>
+           </widget>
+          </item>
+          <item row="10" column="1">
+           <widget class="QPlainTextEdit" name="Monthly_Payment_Field">
+            <property name="enabled">
+             <bool>true</bool>
+            </property>
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="minimumSize">
+             <size>
+              <width>250</width>
+              <height>35</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>250</width>
+              <height>35</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">color: rgb(255,255,255)</string>
+            </property>
+            <property name="readOnly">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item row="3" column="1">
+           <widget class="QPlainTextEdit" name="Loan_Value_Field">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="minimumSize">
+             <size>
+              <width>250</width>
+              <height>35</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>250</width>
+              <height>35</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">color: rgb(255,255,255)</string>
+            </property>
+            <property name="readOnly">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item row="6" column="1">
+           <widget class="QDoubleSpinBox" name="Interest_Rate_Field">
+            <property name="minimumSize">
+             <size>
+              <width>250</width>
+              <height>35</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>250</width>
+              <height>35</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">color:white;</string>
+            </property>
+            <property name="prefix">
+             <string/>
+            </property>
+            <property name="suffix">
+             <string> %</string>
+            </property>
+            <property name="decimals">
+             <number>3</number>
+            </property>
+            <property name="minimum">
+             <double>0.005000000000000</double>
+            </property>
+            <property name="maximum">
+             <double>10.000000000000000</double>
+            </property>
+            <property name="singleStep">
+             <double>0.005000000000000</double>
+            </property>
+            <property name="value">
+             <double>2.875000000000000</double>
+            </property>
+           </widget>
+          </item>
+          <item row="6" column="0">
+           <widget class="QLabel" name="Interest_Rate_Label">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>150</width>
+              <height>150</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">color: rgb(255,255,255)</string>
+            </property>
+            <property name="text">
+             <string>Interest Rate</string>
+            </property>
+           </widget>
+          </item>
+          <item row="5" column="1">
+           <widget class="QDoubleSpinBox" name="Payments_Per_Year_Field">
+            <property name="minimumSize">
+             <size>
+              <width>250</width>
+              <height>35</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>250</width>
+              <height>35</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">color:white;</string>
+            </property>
+            <property name="prefix">
+             <string/>
+            </property>
+            <property name="decimals">
+             <number>0</number>
+            </property>
+            <property name="minimum">
+             <double>1.000000000000000</double>
+            </property>
+            <property name="value">
+             <double>12.000000000000000</double>
+            </property>
+           </widget>
+          </item>
+          <item row="9" column="1">
+           <widget class="QDoubleSpinBox" name="Stock_Growth_Rate_Field">
+            <property name="minimumSize">
+             <size>
+              <width>250</width>
+              <height>35</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>250</width>
+              <height>35</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">color:white;</string>
+            </property>
+            <property name="prefix">
+             <string/>
+            </property>
+            <property name="suffix">
+             <string> %</string>
+            </property>
+            <property name="decimals">
+             <number>3</number>
+            </property>
+            <property name="value">
+             <double>7.000000000000000</double>
+            </property>
+           </widget>
+          </item>
+          <item row="8" column="1">
+           <widget class="QDoubleSpinBox" name="Stock_Contributions_Field">
+            <property name="minimumSize">
+             <size>
+              <width>250</width>
+              <height>35</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>250</width>
+              <height>35</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">color:white;</string>
+            </property>
+            <property name="prefix">
+             <string>$ </string>
+            </property>
+            <property name="maximum">
+             <double>100000.000000000000000</double>
+            </property>
+            <property name="singleStep">
+             <double>10.000000000000000</double>
+            </property>
+            <property name="value">
+             <double>500.000000000000000</double>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="0">
+           <widget class="QLabel" name="Down_Payment_Label">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>150</width>
+              <height>150</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">color: rgb(255,255,255)</string>
+            </property>
+            <property name="text">
+             <string>Down Payment</string>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="1">
+           <widget class="QDoubleSpinBox" name="Down_Payment_Field">
+            <property name="minimumSize">
+             <size>
+              <width>250</width>
+              <height>35</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>250</width>
+              <height>35</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">color:white;</string>
+            </property>
+            <property name="prefix">
+             <string>$ </string>
+            </property>
+            <property name="decimals">
+             <number>0</number>
+            </property>
+            <property name="minimum">
+             <double>1.000000000000000</double>
+            </property>
+            <property name="maximum">
+             <double>10000000.000000000000000</double>
+            </property>
+            <property name="singleStep">
+             <double>100.000000000000000</double>
+            </property>
+            <property name="value">
+             <double>43800.000000000000000</double>
+            </property>
+           </widget>
+          </item>
+          <item row="4" column="1">
+           <widget class="QDoubleSpinBox" name="Loan_Term_Field">
+            <property name="minimumSize">
+             <size>
+              <width>250</width>
+              <height>35</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>250</width>
+              <height>35</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">color:white;</string>
+            </property>
+            <property name="prefix">
+             <string/>
+            </property>
+            <property name="suffix">
+             <string> Years</string>
+            </property>
+            <property name="decimals">
+             <number>0</number>
+            </property>
+            <property name="minimum">
+             <double>1.000000000000000</double>
+            </property>
+            <property name="maximum">
+             <double>100.000000000000000</double>
+            </property>
+            <property name="value">
+             <double>30.000000000000000</double>
+            </property>
+           </widget>
+          </item>
+          <item row="3" column="0">
+           <widget class="QLabel" name="Loan_Value_Label">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>150</width>
+              <height>150</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">color: rgb(255,255,255)</string>
+            </property>
+            <property name="text">
+             <string>Loan Value</string>
+            </property>
+           </widget>
+          </item>
+          <item row="7" column="1">
+           <widget class="QDoubleSpinBox" name="Extra_Mortgage_Field">
+            <property name="minimumSize">
+             <size>
+              <width>250</width>
+              <height>35</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>250</width>
+              <height>35</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">color:white;</string>
+            </property>
+            <property name="prefix">
+             <string>$ </string>
+            </property>
+            <property name="maximum">
+             <double>1000000.000000000000000</double>
+            </property>
+            <property name="singleStep">
+             <double>100.000000000000000</double>
+            </property>
+            <property name="value">
+             <double>235.000000000000000</double>
+            </property>
+           </widget>
+          </item>
+          <item row="5" column="0">
+           <widget class="QLabel" name="Payments_Per_Year_Label">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>150</width>
+              <height>150</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">color: rgb(255,255,255)</string>
+            </property>
+            <property name="text">
+             <string>Payments per Year</string>
+            </property>
+           </widget>
+          </item>
+          <item row="4" column="0">
+           <widget class="QLabel" name="Loan_Term_Label">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>150</width>
+              <height>150</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">color: rgb(255,255,255)</string>
+            </property>
+            <property name="text">
+             <string>Loan Term</string>
+            </property>
+           </widget>
+          </item>
+          <item row="10" column="0">
+           <widget class="QLabel" name="Monthly_Payment_Label">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">color: rgb(255,255,255)</string>
+            </property>
+            <property name="text">
+             <string>Monthly Payment</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="1">
+           <widget class="QDoubleSpinBox" name="Home_Value_Field">
+            <property name="minimumSize">
+             <size>
+              <width>250</width>
+              <height>35</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>250</width>
+              <height>35</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">color:white;</string>
+            </property>
+            <property name="prefix">
+             <string>$ </string>
+            </property>
+            <property name="decimals">
+             <number>0</number>
+            </property>
+            <property name="minimum">
+             <double>1.000000000000000</double>
+            </property>
+            <property name="maximum">
+             <double>10000000.000000000000000</double>
+            </property>
+            <property name="singleStep">
+             <double>1000.000000000000000</double>
+            </property>
+            <property name="value">
+             <double>219000.000000000000000</double>
+            </property>
+           </widget>
+          </item>
+          <item row="8" column="0">
+           <widget class="QLabel" name="Stock_Contributions_Label">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>150</width>
+              <height>150</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">color: rgb(255,255,255)</string>
+            </property>
+            <property name="text">
+             <string>Stock Contributions</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="0">
+           <widget class="QLabel" name="Home_Value_Label">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>150</width>
+              <height>150</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">color: rgb(255,255,255)</string>
+            </property>
+            <property name="text">
+             <string>Home Value</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <widget class="QTableWidget" name="tableWidget">
+        <property name="enabled">
+         <bool>true</bool>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QTableView::item{color:white; background-color:rgb(100, 100, 110);} QTableView::item:alternate{color:white; background-color:rgb(120, 120, 130);} QHeaderView::section{background-color:rgb(120, 120, 130); color:white;}</string>
+        </property>
+        <property name="editTriggers">
+         <set>QAbstractItemView::NoEditTriggers</set>
+        </property>
+        <property name="alternatingRowColors">
+         <bool>true</bool>
+        </property>
+        <attribute name="horizontalHeaderVisible">
+         <bool>false</bool>
+        </attribute>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="Message_Box">
+        <property name="autoFillBackground">
+         <bool>false</bool>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color:white;</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1438</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color:rgb(120, 120, 130)</string>
+   </property>
+   <widget class="QMenu" name="menu_File">
+    <property name="title">
+     <string>&amp;File</string>
+    </property>
+    <addaction name="actionSave_as_New_Defaults"/>
+   </widget>
+   <addaction name="menu_File"/>
+  </widget>
+  <action name="actionSave_as_New_Defaults">
+   <property name="text">
+    <string>Save as New Defaults</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <customwidgets>
+  <customwidget>
+   <class>QChartView</class>
+   <extends>QGraphicsView</extends>
+   <header>QtCharts</header>
+  </customwidget>
+ </customwidgets>
+ <tabstops>
+  <tabstop>Chart</tabstop>
+  <tabstop>Home_Value_Field</tabstop>
+  <tabstop>Down_Payment_Field</tabstop>
+  <tabstop>Loan_Value_Field</tabstop>
+  <tabstop>Loan_Term_Field</tabstop>
+  <tabstop>Payments_Per_Year_Field</tabstop>
+  <tabstop>Interest_Rate_Field</tabstop>
+  <tabstop>Extra_Mortgage_Field</tabstop>
+  <tabstop>Stock_Contributions_Field</tabstop>
+  <tabstop>Stock_Growth_Rate_Field</tabstop>
+  <tabstop>Monthly_Payment_Field</tabstop>
+  <tabstop>tableWidget</tabstop>
+ </tabstops>
+ <resources>
+  <include location="MainWindow.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>Home_Value_Field</sender>
+   <signal>editingFinished()</signal>
+   <receiver>MainWindowClass</receiver>
+   <slot>Home_Value_Field_Changes_Submitted()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>326</x>
+     <y>69</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>522</x>
+     <y>328</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>Down_Payment_Field</sender>
+   <signal>editingFinished()</signal>
+   <receiver>MainWindowClass</receiver>
+   <slot>Down_Payment_Field_Changes_Submitted()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>292</x>
+     <y>143</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>522</x>
+     <y>328</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>Loan_Term_Field</sender>
+   <signal>editingFinished()</signal>
+   <receiver>MainWindowClass</receiver>
+   <slot>Loan_Term_Field_Changes_Submitted()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>292</x>
+     <y>258</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>522</x>
+     <y>328</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>Payments_Per_Year_Field</sender>
+   <signal>editingFinished()</signal>
+   <receiver>MainWindowClass</receiver>
+   <slot>Payments_Per_Year_Field_Changes_Submitted()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>292</x>
+     <y>322</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>522</x>
+     <y>328</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>Interest_Rate_Field</sender>
+   <signal>editingFinished()</signal>
+   <receiver>MainWindowClass</receiver>
+   <slot>Interest_Rate_Field_Changes_Submitted()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>292</x>
+     <y>386</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>522</x>
+     <y>328</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>Extra_Mortgage_Field</sender>
+   <signal>editingFinished()</signal>
+   <receiver>MainWindowClass</receiver>
+   <slot>Extra_Mortgage_Field_Changes_Submitted()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>292</x>
+     <y>450</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>522</x>
+     <y>328</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>Stock_Contributions_Field</sender>
+   <signal>editingFinished()</signal>
+   <receiver>MainWindowClass</receiver>
+   <slot>Stock_Contributions_Field_Changes_Submitted()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>292</x>
+     <y>515</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>718</x>
+     <y>674</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>Stock_Growth_Rate_Field</sender>
+   <signal>editingFinished()</signal>
+   <receiver>MainWindowClass</receiver>
+   <slot>Stock_Growth_Rate_Field_Changes_Submitted()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>253</x>
+     <y>579</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>718</x>
+     <y>674</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionSave_as_New_Defaults</sender>
+   <signal>triggered()</signal>
+   <receiver>MainWindowClass</receiver>
+   <slot>Save_New_Default_Values()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>718</x>
+     <y>674</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>Home_Value_Field_Changes_Submitted()</slot>
+  <slot>Down_Payment_Field_Changes_Submitted()</slot>
+  <slot>Loan_Value_Field_Changes_Submitted()</slot>
+  <slot>Loan_Term_Field_Changes_Submitted()</slot>
+  <slot>Payments_Per_Year_Field_Changes_Submitted()</slot>
+  <slot>Interest_Rate_Field_Changes_Submitted()</slot>
+  <slot>Extra_Mortgage_Field_Changes_Submitted()</slot>
+  <slot>Stock_Contributions_Field_Changes_Submitted()</slot>
+  <slot>Stock_Growth_Rate_Field_Changes_Submitted()</slot>
+  <slot>Save_New_Default_Values()</slot>
+ </slots>
+</ui>
